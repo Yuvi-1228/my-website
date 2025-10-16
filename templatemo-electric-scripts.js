@@ -2,14 +2,12 @@
 
 /*
 
-TemplateMo 596 Electric Xtra
-
 https://templatemo.com/tm-596-electric-xtra
 
 */
 
 // Create floating particles
-        function createParticles() {
+       function createParticles() {
             const particlesContainer = document.getElementById('particles');
             const particleCount = 30;
 
@@ -41,7 +39,7 @@ https://templatemo.com/tm-596-electric-xtra
         });
 
         // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
+       document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 menuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
@@ -68,7 +66,7 @@ https://templatemo.com/tm-596-electric-xtra
         }
 
         // Navbar scroll effect
-        window.addEventListener('scroll', function() {
+       window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -153,14 +151,14 @@ https://templatemo.com/tm-596-electric-xtra
         }
 
         function animateTextOut(textSet) {
-            const chars = textSet.querySelectorAll('.char');
-            const subtitle = textSet.querySelector('.subtitle');
+            /*const chars = textSet.querySelectorAll('.char');*/
+            /*const subtitle = textSet.querySelector('.subtitle');*/
             
             // Animate characters out
-            chars.forEach((char, i) => {
+            /*chars.forEach((char, i) => {
                 char.style.animationDelay = `${i * 0.02}s`;
                 char.classList.add('out');
-            });
+            });*/
             
             // Hide subtitle
             subtitle.classList.remove('visible');
@@ -175,30 +173,30 @@ https://templatemo.com/tm-596-electric-xtra
             const nextSet = textSets[nextIndex];
 
             // Animate out current text
-            animateTextOut(currentSet);
+            /*animateTextOut(currentSet);*/
 
             // After out animation, switch sets
-            setTimeout(() => {
+           /* setTimeout(() => {
                 currentSet.classList.remove('active');
                 nextSet.classList.add('active');
                 animateTextIn(nextSet);
                 
                 currentIndex = nextIndex;
                 isAnimating = false;
-            }, 600);
+            }, 600);*/
         }
 
         // Initialize first text set
-        textSets[0].classList.add('active');
+       textSets[0].classList.add('active');
         animateTextIn(textSets[0]);
 
         // Start rotation after initial display
-        setTimeout(() => {
+       /* setTimeout(() => {
             setInterval(rotateText, 5000); // Change every 5 seconds
-        }, 4000);
+        }, 4000);*/
 
         // Add random glitch effect
-        setInterval(() => {
+       /* setInterval(() => {
             const glitchTexts = document.querySelectorAll('.glitch-text');
             glitchTexts.forEach(text => {
                 if (Math.random() > 0.95) {
@@ -208,4 +206,4 @@ https://templatemo.com/tm-596-electric-xtra
                     }, 200);
                 }
             });
-        }, 3000);
+        }, 3000);*/
