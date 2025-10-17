@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yuvrajthapachhetri.com.np/sitemap.xml
